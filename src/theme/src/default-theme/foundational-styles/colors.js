@@ -53,7 +53,7 @@ export default {
     success: palette.green.dark,
     info: palette.blue.dark,
     danger: palette.red.dark,
-    warning: palette.orange.dark
+    warning: palette.yellow.dark
   },
 
   /**
@@ -72,7 +72,7 @@ export default {
     success: palette.green.base,
     info: palette.blue.base,
     danger: palette.red.base,
-    warning: palette.orange.base
+    warning: palette.yellow.dark
   },
 
   /**
@@ -86,6 +86,6 @@ export default {
     none: palette.blue.base,
     success: palette.green.base,
     danger: palette.red.base,
-    warning: palette.orange.base
+    warning: palette.yellow.dark
   }
 }

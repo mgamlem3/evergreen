@@ -101,7 +101,7 @@ const getLinearGradientWithStates = (
 const getPrimaryButtonStylesForIntent = intent => {
   switch (intent) {
     case Intent.SUCCESS: {
-      const base = palette.green.base
+      const {base} = palette.green
       const hover = tinycolor(base).lighten(10)
       const active = tinycolor(base).darken(10)
       return {
@@ -117,7 +117,7 @@ const getPrimaryButtonStylesForIntent = intent => {
     }
 
     case Intent.WARNING: {
-      const base = palette.yellow.base
+      const {base} = palette.yellow
       const hover = tinycolor(base).lighten(10)
       const active = tinycolor(base).darken(10)
       return {
@@ -133,7 +133,7 @@ const getPrimaryButtonStylesForIntent = intent => {
     }
 
     case Intent.DANGER: {
-      const base = palette.red.base
+      const {base} = palette.red
       const hover = tinycolor(base).lighten(10)
       const active = tinycolor(base).darken(10)
       return {
@@ -149,7 +149,7 @@ const getPrimaryButtonStylesForIntent = intent => {
     }
 
     default: {
-      const base = palette.blue.base
+      const {base} = palette.blue
       const hover = tinycolor(base).lighten(10)
       const active = tinycolor(base).darken(10)
       return {
