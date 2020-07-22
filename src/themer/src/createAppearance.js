@@ -4,7 +4,7 @@ const allowedProperties = [
   'background',
   'backgroundColor',
   'backgroundImage',
-
+  'border',
   'borderRadius',
 
   'transition',

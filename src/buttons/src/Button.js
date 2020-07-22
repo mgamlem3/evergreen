@@ -187,6 +187,7 @@ class Button extends PureComponent {
             marginLeft={-Math.round(height / 8)}
             marginRight={Math.round(height / 4)}
             size={Math.round(height / 2)}
+            color={`${intent}`}
           />
         )}
         {iconBefore || null}
