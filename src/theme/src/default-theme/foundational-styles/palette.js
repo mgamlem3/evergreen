@@ -32,8 +32,8 @@ export default {
   yellow: {
     lightest: '#fef8e7',
     light: '#fbe6a2',
-    base: '#f7d154',
-    dark: '#7e6514'
+    base: '#fdd835',
+    dark: '#edc800'
   },
 
   green: {
