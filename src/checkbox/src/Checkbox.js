@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Box, { spacing, position, layout, dimensions } from 'ui-box'
 import { Text } from '../../typography'
 import { withTheme } from '../../theme'
+import { palette } from '../../theme/src/default-theme/foundational-styles'
 
 const CheckIcon = ({ fill = 'currentColor', ...props }) => (
   <svg width={10} height={7} viewBox="0 0 10 7" {...props}>
@@ -174,7 +175,11 @@ class Checkbox extends PureComponent {
           width={16}
           height={16}
         >
-          {indeterminate ? <MinusIcon /> : <CheckIcon />}
+          {indeterminate ? (
+            <MinusIcon fill={palette.blue.base} />
+          ) : (
+            <CheckIcon fill={palette.blue.base} />
+          )}
         </Box>
         {label && (
           <Text
