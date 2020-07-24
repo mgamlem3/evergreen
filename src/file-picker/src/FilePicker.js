@@ -140,6 +140,7 @@ export default class FilePicker extends PureComponent {
         />
 
         <Button
+          appearance="combo"
           className={`${CLASS_PREFIX}-button`}
           onClick={this.handleButtonClick}
           disabled={disabled}
