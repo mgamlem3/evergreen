@@ -3,8 +3,9 @@ import PropTypes from 'prop-types'
 import Box, { spacing, position, layout, dimensions } from 'ui-box'
 import { Text } from '../../typography'
 import { withTheme } from '../../theme'
+import { palette } from '../../theme/src/default-theme/foundational-styles'
 
-const CircleIcon = ({ size, fill = 'currentColor', ...props }) => (
+const CircleIcon = ({ size, fill = `${palette.blue.base}`, ...props }) => (
   <svg width={size} height={size} viewBox="0 0 10 10" {...props}>
     <circle fill={fill} cx="5" cy="5" r="5" />
   </svg>
