@@ -62,6 +62,27 @@ const getButtonAppearance = (appearance, intent) => {
       })
     }
 
+    case 'combo': {
+      return Themer.createButtonAppearance({
+        disabled,
+        base: {
+          borderTop: `1px solid ${scales.neutral.N5}`,
+          borderRight: `1px solid ${scales.neutral.N5}`,
+          borderBottom: `1px solid ${scales.neutral.N5}`,
+          backgroundColor: 'white'
+        },
+        // Hover: { backgroundColor: `${palette.blue.base}` },
+        focus: {
+          boxShadow: `0 0 0 3px ${scales.blue.B4A}`
+        },
+        active: {
+          backgroundImage: 'none',
+          // Color: `${palette.blue.base}`,
+          boxShadow: `0 0 0 3px ${scales.blue.B4A}`
+        }
+      })
+    }
+
     case 'default':
     default: {
       const colors = getColorsForIntent(intent)
