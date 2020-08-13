@@ -6,6 +6,9 @@ const allowedProperties = [
   'backgroundImage',
   'border',
   'borderRadius',
+  'borderTop',
+  'borderRight',
+  'borderBottom',
 
   'transition',
   'boxShadow',

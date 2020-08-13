@@ -3,6 +3,7 @@ import memoizeClassName from '../utils/memoizeClassName'
 import scales from '../foundational-styles/scales'
 import { getColorsForIntent, getPrimaryButtonStylesForIntent } from '../helpers'
 import { defaultControlStyles } from '../shared'
+import { palette } from '../foundational-styles'
 
 /**
  * Disabled styles are all the same for all buttons.

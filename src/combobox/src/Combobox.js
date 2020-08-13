@@ -5,6 +5,7 @@ import { Autocomplete } from '../../autocomplete'
 import { TextInput } from '../../text-input'
 import { IconButton } from '../../buttons'
 import deprecated from '../../lib/deprecated'
+import { scales } from '../../theme/src/default-theme/foundational-styles'
 
 export default class Combobox extends PureComponent {
   static propTypes = {
@@ -162,6 +163,7 @@ export default class Combobox extends PureComponent {
               value={inputValue}
               borderTopRightRadius={0}
               borderBottomRightRadius={0}
+              borderRight="none !important"
               disabled={disabled}
               {...getInputProps({
                 ...inputProps,
@@ -187,7 +189,7 @@ export default class Combobox extends PureComponent {
               iconAim="down"
               color="muted"
               icon={isLoading ? '' : 'caret-down'}
-              appearance="default"
+              appearance="combo"
               height={height}
               marginLeft={-1}
               paddingLeft={isLoading ? 12 : 0}
