@@ -11,6 +11,9 @@ storiesOf('spinner', module)
         document.body.style.height = '100vh'
       })()}
       <Spinner />
+      <Spinner color="success" />
+      <Spinner color="warning" />
+      <Spinner color="danger" />
     </Box>
   ))
   .add('Spinner with 300ms delay', () => (

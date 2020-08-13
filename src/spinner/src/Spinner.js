@@ -3,6 +3,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import Box from 'ui-box'
 import { withTheme } from '../../theme'
+import { getColorsForIntent } from '../../theme/src/default-theme/helpers'
 
 const loadingKeyframes = css.keyframes('loading', {
   '0%': {
@@ -56,6 +57,11 @@ class Spinner extends PureComponent {
     size: PropTypes.number.isRequired,
 
     /**
+     * The color of the spinner
+     */
+    color: PropTypes.string,
+
+    /**
      * Theme provided by ThemeProvider.
      */
     theme: PropTypes.object.isRequired
@@ -79,7 +85,8 @@ class Spinner extends PureComponent {
       return null
     }
 
-    const { theme, size, ...props } = this.props
+    const { theme, size, color, ...props } = this.props
+    const colors = getColorsForIntent(color)
     return (
       <Box width={size} height={size} lineHeight={0} {...props}>
         <Box
@@ -91,7 +98,7 @@ class Spinner extends PureComponent {
         >
           <Box
             is="circle"
-            className={innerClass(theme.spinnerColor)}
+            className={innerClass(colors.base)}
             cx="75"
             cy="75"
             r="60"
