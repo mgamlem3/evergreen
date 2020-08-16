@@ -1,6 +1,6 @@
 {
-  "name": "mgamlem3-evergreen-ui",
   "version": "4.28.1",
+  "name": "@mgamlem3/evergreen",
   "description": "🌲 A Port of the React UI Kit by Segment 🌲",
   "contributors": [
     "Jeroen Ransijn (https://jssr.design/)",
@@ -13,7 +13,7 @@
     "ui",
     "react"
   ],
-  "repository": "mgamlem3/evergreen",
+  "repository": "https://github.com/mgamlem3/evergreen.git",
   "license": "MIT",
   "main": "commonjs/index.js",
   "module": "esm/index.js",
