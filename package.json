@@ -30,6 +30,9 @@
     "./commonjs/backwards-compat-classname.js",
     "./esm/backwards-compat-classname.js"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "test": "xo && jest --bail && ava",
     "prepublishOnly": "rm -rf esm commonjs umd && yarn build",
@@ -78,6 +81,7 @@
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.11.0",
     "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
